@@ -1,0 +1,26 @@
+@baseUrl={{$dotenv API_URL}} 
+
+# Vercel
+
+GET {{baseUrl}}/api
+
+###
+POST {{baseUrl}}/api
+Content-Type: application/json
+
+{ "name": "Foo" }
+
+###
+PATCH {{baseUrl}}/api
+Content-Type: application/json
+
+{ "name": "Foo" }
+
+###
+PUT {{baseUrl}}/api
+Content-Type: application/json
+
+{ "name": "Foo" }
+
+###
+DELETE {{baseUrl}}/api
