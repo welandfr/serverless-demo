@@ -2,6 +2,11 @@ import { sql } from '@vercel/postgres';
 
 export default async function handler(req, res) {
 
+  if (req.method === 'POST') {
+    return res.status(200).json('insert');
+  }
+
+
   try {
     const { rows } = await sql`SELECT * FROM foo`;
     return res.status(200).json(rows);
