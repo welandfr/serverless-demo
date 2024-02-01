@@ -14,15 +14,15 @@ export default async function handler(req, res) {
  *  tagged template literal
  *
 
-function tagFun(foo, ...vals) {
-    console.log('f2', foo, vals)
+function tagFun(names, ...vals) {
+    console.log(names, vals)
     // note ... Spread operator syntax skapar här en ny array av alla resterande argument
 }
 
-const fname = 'Fredrik'
-const lname = 'Welander'
+foo = 'Foo'
+bar = 'Bar'
 
-tagFun(`hello ${fname} ${lname}!`)
+tagFun(`normal ${foo} ${bar}!`)
 
-tagFun`hello ${fname} ${lname}!`
+tagFun`tagged ${foo} ${bar}!`
  */
