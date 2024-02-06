@@ -24,3 +24,12 @@ Content-Type: application/json
 
 ###
 DELETE {{baseUrl}}/api
+
+
+###
+POST {{baseUrl}}/api/users
+Content-Type: application/json
+
+{ 
+    "name": "Foo"
+}
